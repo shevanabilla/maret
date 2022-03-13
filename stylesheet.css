@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
   }
   
   body {
@@ -11,6 +13,32 @@
     text-decoration: none;
   }
 
+  .container {
+    max-width: 1117px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .main {
+    background-image: url(https://media.istockphoto.com/photos/hakumai-picture-id1215148144?b=1&k=6&m=1215148144&s=170667a&w=0&h=dsXg0DbN-dEN6tUuyk7aTclZN0LXh1abJ2OCV6prtCk=);
+    background-size: cover;
+    padding-top: 180px;
+    padding-bottom: 100px;
+    color: black;
+    text-align: left;
+  }
+  
+  .main h1 {
+    opacity: 0.7;
+    font-size: 45px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .main p {
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+  
   /* header */
   header {
     height: 8vh;
@@ -63,6 +91,68 @@
       font-size: 150%;
     }
     
+    .jumbotron h2,
+h3,
+h4 {
+  color: rgb(255, 0, 0);
+}
+
+.product-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: black;
+}
+
+.heading h2 {
+  font-weight: normal;
+  color: rgb(255, 0, 0);
+}
+
+.beras {
+  float: left;
+  width: 25%;
+}
+
+.beras-icon {
+  position: relative;
+}
+
+.beras-icon img {
+  cursor: pointer;
+  transition: all 0.8s;
+}
+
+.beras-icon img:hover {
+  transform: scale(1.2);
+}
+
+.beras-icon p {
+  position: absolute;
+  top: 44%;
+  width: 100%;
+  color: black;
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  color: black;
+}
+
+.clear {
+  clear: left;
+}
+
 
   /* headline atas */
 
@@ -72,20 +162,26 @@
 
   /* footer */
   .footer {
-    height: 90px;
     background-color: #ffa2afd2;
     color: rgb(32, 0, 119);
+    margin-top: 30px;
+    height: 180px;
+    padding: 40px;
+    bottom: 0;
 }
 
-  .footer-logo img {
-    width: 130px;
-    float: left;
-    padding: 30px 20px;
+  .footer-logo {
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
 }
 
-  .footer-p {
-  color: rgb(32, 0, 119);
-  text-align: center;
-  padding-top: 60px;
-  padding-right: 120px;
+.footer-list li {
+  padding: 0 20px 15px 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-list a {
+  color: white;
 }
