@@ -1,107 +1,187 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konsultan Asmara</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <!-- untuk header -->
-    <header>
-      <div class="jumbotron">
-        <h1>SELAMAT DATANG DI KONSULTAN ASMARA</h1>
-        <marquee scrollamount="50" scrolldelay="500">
-          Menyediakan jasa konsultasi Perihal Asmara Dari Segala Sisi. Mau konsultasi apa hari ini?
-        </marquee>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#login">LOGIN</a></li>
-          <li><a href="#signup">SIGN UP</a></li>
-          <li><a href="#katalog">KATALOG</a></li>
-          <li><a href="#hubungi">HUBUNGI KAMI</a></li>
-        </ul>
-      </nav>
-    </header>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Lucida Grande";
+  }
+  
+  a {
+    text-decoration: none;
+  }
 
-    <!-- untuk headline atas -->
-    <div class="main">
-      <div class="container">
-        <div class="text-wrap">
-          <h1>Pelopor Digitalisasi Bahan Pangan Pokok di Indonesia</h1>
-          <p>
-            Dimulai tahun 2021, melalui kolaborasi antara 5 orang pemuda pemudi
-            di Indonesia, Rumahberas terbentuk dan menjadi toko online yang
-            menyediakan berbagai macam jenis beras.
-          </p>
-        </div>
-      </div>
-    </div>
-
+  .container {
+    max-width: 1117px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .main {
+    background-image: url(https://media.istockphoto.com/photos/hakumai-picture-id1215148144?b=1&k=6&m=1215148144&s=170667a&w=0&h=dsXg0DbN-dEN6tUuyk7aTclZN0LXh1abJ2OCV6prtCk=);
+    background-size: cover;
+    padding-top: 180px;
+    padding-bottom: 100px;
+    color: black;
+    text-align: left;
+  }
+  
+  .main h1 {
+    opacity: 0.7;
+    font-size: 45px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .main p {
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+  
+  /* header */
+  header {
+    height: 8vh;
+    width: 100%;
+    background-color: #ffa2afd2;
+    color: white;
+    display: inline;
+    }
+  
+  nav {
+    background-color: #f67b8cd2;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+    }
     
-    <div class="product-wrapper" id="katalog">
-      <div class="container">
-        <div class="heading">
-          <h1>Pilihan terbaik dalam panen kali ini</h1>
-          <h2>Lihat apa yang anda lewatkan dan dapatkan sekarang!</h2>
-        </div>
+    nav a {
+      font-size: 18px;
+      font-weight: 400;
+      text-decoration: none;
+      color: white;
+    }
+    
+    nav a:hover {
+      font-weight: bold;
+    }
+    
+    nav li {
+      display: inline;
+      list-style-type: none;
+      margin-right: 20px;
+    }
+    
+    .jumbotron {
+      font-size: 20px;
+      padding: 60px;
+      background-color: rgba(0, 0, 0, 0.5);
+      text-align: center;
+      color: white;
+    }
+    
+    .jumbotron marquee {
+      width: 700px;
+    }
+    
+    .jumbotron h1 {
+      font-size: 150%;
+    }
+    
+    .jumbotron h2,
+h3,
+h4 {
+  color: rgb(255, 0, 0);
+}
 
-        <div class="banyak-beras">
-          <div class="beras">
-            <div class="beras-icon">
-              <img
-                src="https://ipanganan.com/uploads/products_1617782513.png"
-                width="230"
-              />
-            </div>
-            <p class="text-contents">Beras Koala Madu Pandan Wangi</p>
-          </div>
-          <div class="beras">
-            <div class="beras-icon">
-              <img
-                src="https://ipanganan.com/uploads/products_1617782452.png"
-                width="230"
-              />
-            </div>
-            <p class="text-contents">Beras Kita 5kg</p>
-          </div>
-          <div class="beras">
-            <div class="beras-icon">
-              <img
-                src="https://ipanganan.com/uploads/products_1617782705.png"
-                width="230"
-              />
-            </div>
-            <p class="text-contents">Beras Maknyuss 5kg</p>
-          </div>
-          <div class="beras">
-            <div class="beras-icon">
-              <img
-                src="https://ipanganan.com/uploads/products_1617783168.png"
-                width="230"
-              />
-            </div>
-            <p class="text-contents">Beras Cap Topi Koki Setra Ramos</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="clear"></div>
+.product-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  margin-bottom: 80px;
+}
 
-      
-    <!-- untuk footer -->
-    <footer>
-      <div class="footer-logo">KONSULTAN ASMARA</div>
-      <div class="footer-list">
-        <ul>
-          <li><a href="#Tentang">Tentang</a></li>
-          <li><a href="#Saran">Saran</a></li>
-          <li><a href="#Hubungi">Hubungi Kami</a></li>
-        </ul>
-      </div>
-    </footer>
-  </body>
-</html>
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: black;
+}
+
+.heading h2 {
+  font-weight: normal;
+  color: rgb(255, 0, 0);
+}
+
+.beras {
+  float: left;
+  width: 25%;
+}
+
+.beras-icon {
+  position: relative;
+}
+
+.beras-icon img {
+  cursor: pointer;
+  transition: all 0.8s;
+}
+
+.beras-icon img:hover {
+  transform: scale(1.2);
+}
+
+.beras-icon p {
+  position: absolute;
+  top: 44%;
+  width: 100%;
+  color: black;
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  color: black;
+}
+
+.clear {
+  clear: left;
+}
+
+
+  /* headline atas */
+
+  /* konten */
+
+  /* tambahan di bawah */
+
+  /* footer */
+  .footer {
+    background-color: #ffa2afd2;
+    color: rgb(32, 0, 119);
+    margin-top: 30px;
+    height: 180px;
+    padding: 40px;
+    bottom: 0;
+}
+
+  .footer-logo {
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-list li {
+  padding: 0 20px 15px 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-list a {
+  color: rgb(32, 0, 119);
+}
